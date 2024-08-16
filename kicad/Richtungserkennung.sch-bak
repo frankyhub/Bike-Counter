@@ -1,0 +1,654 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Timer:NE555D U2
+U 1 1 60512862
+P 3900 2150
+F 0 "U2" H 3900 2731 50  0000 C CNN
+F 1 "NE555D" H 3900 2640 50  0000 C CNN
+F 2 "Package_DIP:DIP-8_W7.62mm" H 4750 1750 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/ne555.pdf" H 4750 1750 50  0001 C CNN
+	1    3900 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 6051A393
+P 2700 1950
+F 0 "C1" V 2952 1950 50  0000 C CNN
+F 1 "10nF" V 2861 1950 50  0000 C CNN
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm" H 2738 1800 50  0001 C CNN
+F 3 "~" H 2700 1950 50  0001 C CNN
+	1    2700 1950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 6051BADE
+P 3550 3450
+F 0 "R4" H 3620 3496 50  0000 L CNN
+F 1 "R" H 3620 3405 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal" V 3480 3450 50  0001 C CNN
+F 3 "~" H 3550 3450 50  0001 C CNN
+	1    3550 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3900 950  3200 950 
+$Comp
+L !Goody:PL-Stecker_3pol_ohne_Beschriftung J2
+U 1 1 6052B717
+P 1100 1100
+F 0 "J2" V 817 957 50  0000 C CNN
+F 1 "PL-Stecker_3pol_ohne_Beschriftung" H 1100 1300 50  0001 C CNN
+F 2 "!Goody:PL-Stecker3pol" H 1100 1100 50  0001 C CNN
+F 3 "" H 1100 1100 50  0001 C CNN
+	1    1100 1100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3900 2550 2850 2550
+Wire Wire Line
+	1150 2550 1150 2100
+Wire Wire Line
+	1150 1250 1000 1250
+Text Notes 650  1000 0    50   ~ 0
++3,3V
+Text Notes 650  1300 0    50   ~ 0
+GND
+Text Label 600  1100 0    50   ~ 0
++3,3V
+$Comp
+L Device:R R2
+U 1 1 6052D726
+P 2850 1450
+F 0 "R2" H 2920 1496 50  0000 L CNN
+F 1 "100k" H 2920 1405 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal" V 2780 1450 50  0001 C CNN
+F 3 "~" H 2850 1450 50  0001 C CNN
+	1    2850 1450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2850 1300 2850 950 
+Connection ~ 2850 950 
+Wire Wire Line
+	2850 950  2400 950 
+Wire Wire Line
+	3400 1950 2850 1950
+Wire Wire Line
+	2850 1950 2850 1600
+$Comp
+L Device:R R1
+U 1 1 6052DFEE
+P 2400 1450
+F 0 "R1" H 2470 1496 50  0000 L CNN
+F 1 "100k" H 2470 1405 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal" V 2330 1450 50  0001 C CNN
+F 3 "~" H 2400 1450 50  0001 C CNN
+	1    2400 1450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2400 1300 2400 950 
+Connection ~ 2400 950 
+Connection ~ 2850 1950
+$Comp
+L !Goody:PL-Stecker_3pol_ohne_Beschriftung J1
+U 1 1 6052F018
+P 1050 1950
+F 0 "J1" V 767 1807 50  0000 C CNN
+F 1 "PL-Stecker_3pol_ohne_Beschriftung" H 1050 2150 50  0001 C CNN
+F 2 "!Goody:PL-Stecker3pol" H 1050 1950 50  0001 C CNN
+F 3 "" H 1050 1950 50  0001 C CNN
+	1    1050 1950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2550 1950 2400 1950
+Wire Wire Line
+	2400 1600 2400 1950
+Connection ~ 2400 1950
+Wire Wire Line
+	2400 1950 2000 1950
+Text Notes 650  2000 0    50   ~ 0
+E1
+Wire Wire Line
+	950  2100 1150 2100
+Connection ~ 1150 2100
+Wire Wire Line
+	1150 2100 1150 1250
+Text Notes 600  2150 0    50   ~ 0
+GND
+$Comp
+L Device:R R3
+U 1 1 60533B69
+P 3200 1450
+F 0 "R3" H 3270 1496 50  0000 L CNN
+F 1 "10k" H 3270 1405 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal" V 3130 1450 50  0001 C CNN
+F 3 "~" H 3200 1450 50  0001 C CNN
+	1    3200 1450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3200 1300 3200 950 
+Connection ~ 3200 950 
+Wire Wire Line
+	3200 950  2850 950 
+Wire Wire Line
+	3200 1600 3200 2350
+Wire Wire Line
+	3400 2350 3200 2350
+Connection ~ 3200 2350
+Wire Wire Line
+	3200 2350 3200 2700
+Wire Wire Line
+	3900 3100 3900 2550
+Connection ~ 3900 2550
+$Comp
+L Device:C C2
+U 1 1 60536733
+P 2850 2350
+F 0 "C2" V 3102 2350 50  0000 C CNN
+F 1 "10nF" V 3011 2350 50  0000 C CNN
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm" H 2888 2200 50  0001 C CNN
+F 3 "~" H 2850 2350 50  0001 C CNN
+	1    2850 2350
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4400 2150 4450 2150
+Wire Wire Line
+	5150 2150 5150 2000
+Connection ~ 3900 950 
+$Comp
+L !Goody:Trimmer RV1
+U 1 1 60539A36
+P 5150 1850
+F 0 "RV1" H 5081 1896 50  0000 R CNN
+F 1 "10k" H 5081 1805 50  0000 R CNN
+F 2 "Potentiometer_THT:Potentiometer_Piher_PT-6-H_Horizontal" H 5150 1850 50  0001 C CNN
+F 3 "~" H 5150 1850 50  0001 C CNN
+	1    5150 1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5300 1850 5300 2150
+Wire Wire Line
+	4450 2150 4450 2350
+Wire Wire Line
+	4450 2350 4400 2350
+Connection ~ 4450 2150
+Wire Wire Line
+	4450 2150 5150 2150
+$Comp
+L Device:CP C3
+U 1 1 6053D30C
+P 4450 2750
+F 0 "C3" H 4568 2796 50  0000 L CNN
+F 1 "CP" H 4568 2705 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm" H 4488 2600 50  0001 C CNN
+F 3 "~" H 4450 2750 50  0001 C CNN
+	1    4450 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4450 2900 4450 3100
+Wire Wire Line
+	3200 3100 3900 3100
+Connection ~ 3900 3100
+Wire Wire Line
+	3900 3100 4450 3100
+Connection ~ 4450 2350
+Wire Wire Line
+	4450 2350 4450 2600
+Wire Wire Line
+	4400 1950 4800 1950
+Connection ~ 5150 2150
+Wire Wire Line
+	5150 2150 5300 2150
+Wire Wire Line
+	5150 1700 5150 950 
+Wire Wire Line
+	5150 950  3900 950 
+$Comp
+L Device:C C5
+U 1 1 60558BA2
+P 7750 2000
+F 0 "C5" V 8002 2000 50  0000 C CNN
+F 1 "10nF" V 7911 2000 50  0000 C CNN
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm" H 7788 1850 50  0001 C CNN
+F 3 "~" H 7750 2000 50  0001 C CNN
+	1    7750 2000
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8950 1800 8950 1000
+Wire Wire Line
+	8950 1000 8250 1000
+Wire Wire Line
+	6200 2600 6200 2550
+$Comp
+L Device:R R6
+U 1 1 60558BB6
+P 7900 1500
+F 0 "R6" H 7970 1546 50  0000 L CNN
+F 1 "100k" H 7970 1455 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal" V 7830 1500 50  0001 C CNN
+F 3 "~" H 7900 1500 50  0001 C CNN
+	1    7900 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7900 1350 7900 1000
+Connection ~ 7900 1000
+Wire Wire Line
+	7900 1000 7450 1000
+Wire Wire Line
+	8450 2000 7900 2000
+Wire Wire Line
+	7900 2000 7900 1650
+$Comp
+L Device:R R5
+U 1 1 60558BC1
+P 7450 1500
+F 0 "R5" H 7520 1546 50  0000 L CNN
+F 1 "100k" H 7520 1455 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal" V 7380 1500 50  0001 C CNN
+F 3 "~" H 7450 1500 50  0001 C CNN
+	1    7450 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7450 1350 7450 1000
+Connection ~ 7450 1000
+Connection ~ 7900 2000
+$Comp
+L !Goody:PL-Stecker_3pol_ohne_Beschriftung J4
+U 1 1 60558BCB
+P 6100 2000
+F 0 "J4" V 5817 1857 50  0000 C CNN
+F 1 "PL-Stecker_3pol_ohne_Beschriftung" H 6100 2200 50  0001 C CNN
+F 2 "!Goody:PL-Stecker3pol" H 6100 2000 50  0001 C CNN
+F 3 "" H 6100 2000 50  0001 C CNN
+	1    6100 2000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7600 2000 7450 2000
+Wire Wire Line
+	7450 1650 7450 2000
+Connection ~ 7450 2000
+Wire Wire Line
+	7450 2000 6900 2000
+Text Notes 5700 2050 0    50   ~ 0
+E1
+Wire Wire Line
+	6000 2150 6200 2150
+Text Notes 5650 2200 0    50   ~ 0
+GND
+$Comp
+L Device:R R7
+U 1 1 60558BDB
+P 8250 1500
+F 0 "R7" H 8320 1546 50  0000 L CNN
+F 1 "10k" H 8320 1455 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal" V 8180 1500 50  0001 C CNN
+F 3 "~" H 8250 1500 50  0001 C CNN
+	1    8250 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8250 1350 8250 1000
+Connection ~ 8250 1000
+Wire Wire Line
+	8250 1000 7900 1000
+Wire Wire Line
+	8250 1650 8250 2400
+Wire Wire Line
+	8450 2400 8250 2400
+Connection ~ 8250 2400
+Wire Wire Line
+	8250 2400 8250 2750
+$Comp
+L Device:C C6
+U 1 1 60558BEA
+P 7900 2400
+F 0 "C6" V 8152 2400 50  0000 C CNN
+F 1 "10nF" V 8061 2400 50  0000 C CNN
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm" H 7938 2250 50  0001 C CNN
+F 3 "~" H 7900 2400 50  0001 C CNN
+	1    7900 2400
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	8450 2200 7900 2200
+Wire Wire Line
+	9450 2200 9500 2200
+Wire Wire Line
+	10200 2200 10200 2050
+Connection ~ 8950 1000
+$Comp
+L !Goody:Trimmer RV2
+U 1 1 60558BF5
+P 10200 1900
+F 0 "RV2" H 10131 1946 50  0000 R CNN
+F 1 "100k" H 10131 1855 50  0000 R CNN
+F 2 "Potentiometer_THT:Potentiometer_Piher_PT-6-H_Horizontal" H 10200 1900 50  0001 C CNN
+F 3 "~" H 10200 1900 50  0001 C CNN
+	1    10200 1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10350 1900 10350 2200
+Wire Wire Line
+	9500 2400 9450 2400
+Connection ~ 9500 2200
+Wire Wire Line
+	9500 2200 10200 2200
+$Comp
+L Device:CP C7
+U 1 1 60558C00
+P 9500 2800
+F 0 "C7" H 9618 2846 50  0000 L CNN
+F 1 "CP" H 9618 2755 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm" H 9538 2650 50  0001 C CNN
+F 3 "~" H 9500 2800 50  0001 C CNN
+	1    9500 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9500 2950 9500 3150
+Connection ~ 9500 2400
+Wire Wire Line
+	9450 2000 9750 2000
+Connection ~ 10200 2200
+Wire Wire Line
+	10200 2200 10350 2200
+Wire Wire Line
+	10200 1750 10200 1000
+Wire Wire Line
+	10200 1000 8950 1000
+Wire Wire Line
+	3550 2900 3500 2900
+Wire Wire Line
+	3550 2900 3550 3300
+Wire Wire Line
+	9750 2000 9750 3950
+Wire Wire Line
+	3550 3950 3550 3600
+$Comp
+L Device:R R8
+U 1 1 605615F9
+P 8650 3450
+F 0 "R8" H 8720 3496 50  0000 L CNN
+F 1 "R" H 8720 3405 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal" V 8580 3450 50  0001 C CNN
+F 3 "~" H 8650 3450 50  0001 C CNN
+	1    8650 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8550 2950 8650 2950
+Wire Wire Line
+	8650 2950 8650 3300
+Wire Wire Line
+	4800 1950 4800 3750
+Wire Wire Line
+	8650 3750 8650 3600
+Wire Wire Line
+	2850 2500 2850 2550
+Connection ~ 2850 2550
+Wire Wire Line
+	3400 2150 2850 2150
+Wire Wire Line
+	2850 2150 2850 2200
+Wire Wire Line
+	7900 2200 7900 2250
+Wire Wire Line
+	7900 2550 7900 2600
+Wire Wire Line
+	8250 3150 8950 3150
+Connection ~ 7900 2600
+Wire Wire Line
+	9500 2400 9500 2650
+Wire Wire Line
+	9500 2200 9500 2400
+$Comp
+L Timer:NE555D U4
+U 1 1 60558B9C
+P 8950 2200
+F 0 "U4" H 8950 2781 50  0000 C CNN
+F 1 "NE555D" H 8950 2690 50  0000 C CNN
+F 2 "Package_DIP:DIP-8_W7.62mm" H 9800 1800 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/ne555.pdf" H 9800 1800 50  0001 C CNN
+	1    8950 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7900 2600 8950 2600
+Wire Wire Line
+	3900 950  3900 800 
+Wire Wire Line
+	3900 800  6900 800 
+Wire Wire Line
+	7450 800  7450 1000
+Wire Wire Line
+	8950 2600 8950 3150
+Connection ~ 8950 2600
+Connection ~ 8950 3150
+Wire Wire Line
+	8950 3150 9500 3150
+Wire Wire Line
+	3900 1750 3900 950 
+$Comp
+L Transistor_BJT:BC338 Q1
+U 1 1 6087A815
+P 3300 2900
+F 0 "Q1" H 3491 2946 50  0000 L CNN
+F 1 "BC338" H 3491 2855 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 3500 2825 50  0001 L CIN
+F 3 "http://diotec.com/tl_files/diotec/files/pdf/datasheets/bc337" H 3300 2900 50  0001 L CNN
+	1    3300 2900
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Transistor_BJT:BC338 Q2
+U 1 1 6089DF2C
+P 8350 2950
+F 0 "Q2" H 8541 2996 50  0000 L CNN
+F 1 "BC338" H 8541 2905 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 8550 2875 50  0001 L CIN
+F 3 "http://diotec.com/tl_files/diotec/files/pdf/datasheets/bc337" H 8350 2950 50  0001 L CNN
+	1    8350 2950
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4450 3100 7850 3100
+Wire Wire Line
+	7850 3100 7850 3150
+Wire Wire Line
+	7850 3150 8250 3150
+Connection ~ 4450 3100
+Connection ~ 8250 3150
+Wire Wire Line
+	4800 3750 5550 3750
+Wire Wire Line
+	3550 3950 6400 3950
+Wire Wire Line
+	6200 2600 6900 2600
+NoConn ~ 1000 1100
+Wire Wire Line
+	950  1800 950  1950
+Connection ~ 950  1950
+Wire Wire Line
+	3900 2550 6200 2550
+Connection ~ 6200 2550
+Wire Wire Line
+	6200 2550 6200 2150
+Wire Wire Line
+	6000 1850 6000 2000
+Connection ~ 6000 2000
+$Comp
+L !Goody:PL-Stecker_3pol_ohne_Beschriftung J3
+U 1 1 606E3869
+P 5550 3350
+F 0 "J3" H 5528 3076 50  0000 C CNN
+F 1 "PL-Stecker_3pol_ohne_Beschriftung" H 5550 3550 50  0001 C CNN
+F 2 "!Goody:PL-Stecker3pol" H 5550 3350 50  0001 C CNN
+F 3 "" H 5550 3350 50  0001 C CNN
+	1    5550 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L !Goody:PL-Stecker_3pol_ohne_Beschriftung J5
+U 1 1 606E4294
+P 6400 3350
+F 0 "J5" H 6378 3076 50  0000 C CNN
+F 1 "PL-Stecker_3pol_ohne_Beschriftung" H 6400 3550 50  0001 C CNN
+F 2 "!Goody:PL-Stecker3pol" H 6400 3350 50  0001 C CNN
+F 3 "" H 6400 3350 50  0001 C CNN
+	1    6400 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5550 3450 5550 3750
+Connection ~ 5550 3750
+Wire Wire Line
+	5550 3750 8650 3750
+Wire Wire Line
+	6400 3450 6400 3950
+Connection ~ 6400 3950
+Wire Wire Line
+	6400 3950 9750 3950
+NoConn ~ 6550 3450
+NoConn ~ 6250 3450
+NoConn ~ 5700 3450
+NoConn ~ 5400 3450
+Wire Wire Line
+	1150 2550 2000 2550
+Wire Wire Line
+	1000 950  2000 950 
+$Comp
+L Diode:1N5817 D1
+U 1 1 606B2031
+P 2000 1450
+F 0 "D1" V 1954 1530 50  0000 L CNN
+F 1 "1N5817" V 2045 1530 50  0000 L CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 2000 1275 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88525/1n5817.pdf" H 2000 1450 50  0001 C CNN
+	1    2000 1450
+	0    1    1    0   
+$EndComp
+$Comp
+L Diode:1N5817 D2
+U 1 1 606B3A76
+P 2000 2300
+F 0 "D2" V 1954 2380 50  0000 L CNN
+F 1 "1N5817" V 2045 2380 50  0000 L CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 2000 2125 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88525/1n5817.pdf" H 2000 2300 50  0001 C CNN
+	1    2000 2300
+	0    1    1    0   
+$EndComp
+$Comp
+L Diode:1N5817 D3
+U 1 1 606B3FCB
+P 6900 1500
+F 0 "D3" V 6854 1580 50  0000 L CNN
+F 1 "1N5817" V 6945 1580 50  0000 L CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 6900 1325 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88525/1n5817.pdf" H 6900 1500 50  0001 C CNN
+	1    6900 1500
+	0    1    1    0   
+$EndComp
+$Comp
+L Diode:1N5817 D4
+U 1 1 606B4BFA
+P 6900 2300
+F 0 "D4" V 6854 2380 50  0000 L CNN
+F 1 "1N5817" V 6945 2380 50  0000 L CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 6900 2125 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88525/1n5817.pdf" H 6900 2300 50  0001 C CNN
+	1    6900 2300
+	0    1    1    0   
+$EndComp
+$Comp
+L !Goody:R R9
+U 1 1 606B52A7
+P 1550 1950
+F 0 "R9" V 1343 1950 50  0000 C CNN
+F 1 "1k" V 1434 1950 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0411_L9.9mm_D3.6mm_P12.70mm_Horizontal" V 1480 1950 50  0001 C CNN
+F 3 "~" H 1550 1950 50  0001 C CNN
+	1    1550 1950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1400 1950 950  1950
+$Comp
+L !Goody:R R10
+U 1 1 606B5919
+P 6450 2000
+F 0 "R10" V 6243 2000 50  0000 C CNN
+F 1 "1k" V 6334 2000 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0411_L9.9mm_D3.6mm_P12.70mm_Horizontal" V 6380 2000 50  0001 C CNN
+F 3 "~" H 6450 2000 50  0001 C CNN
+	1    6450 2000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6300 2000 6000 2000
+Wire Wire Line
+	2000 1300 2000 950 
+Connection ~ 2000 950 
+Wire Wire Line
+	2000 950  2400 950 
+Wire Wire Line
+	2000 1600 2000 1950
+Connection ~ 2000 1950
+Wire Wire Line
+	2000 1950 1700 1950
+Wire Wire Line
+	2000 1950 2000 2150
+Wire Wire Line
+	2000 2450 2000 2550
+Connection ~ 2000 2550
+Wire Wire Line
+	2000 2550 2850 2550
+Connection ~ 6900 800 
+Wire Wire Line
+	6900 800  7450 800 
+Wire Wire Line
+	6900 1650 6900 2000
+Connection ~ 6900 2000
+Wire Wire Line
+	6900 2000 6600 2000
+Wire Wire Line
+	6900 2150 6900 2450
+Wire Wire Line
+	6900 2150 6900 2000
+Connection ~ 6900 2150
+Wire Wire Line
+	6900 2450 6900 2600
+Connection ~ 6900 2450
+Connection ~ 6900 2600
+Wire Wire Line
+	6900 2600 7900 2600
+Wire Wire Line
+	6900 800  6900 1350
+$EndSCHEMATC
