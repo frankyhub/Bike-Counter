@@ -1,3 +1,5 @@
+<a name="oben"></a>
+
 # Bike-Counter
 
 ## Story
@@ -26,3 +28,11 @@ Der Bike-Counter zählt Bikes auf einer Nebenstraße in zwei unterschiedlichen R
 ![Bild](pic/Dashboard.png)
 
 ![Bild](pic/Auswertung.png)
+
+---
+
+<div style="position:absolute; left:2cm; ">   
+<ol class="breadcrumb" style="border-top: 2px solid black;border-bottom:2px solid black; height: 45px; width: 900px;"> <p align="center"><a href="#oben">nach oben</a></p></ol>
+</div>  
+
+---
