@@ -5,6 +5,13 @@
 ## Story
 Der Bike-Counter zählt Bikes auf einer Nebenstraße in zwei unterschiedlichen Richtungen und sendet die Zählerstände an eine SQL-Datenbank. Es sollen nur Bikes gezählt werden und keine Fußgänger oder andere Fahrzeuge. Mit einem Dashboard werden die Zählerstände der Bikes angezeigt. Eine Auswertung zeigt die Durchfahrt der Bikes innerhalb der letzten 24 Stunden. Für die Erfassung der Bikes werden 2 Lichtschranken verwendet.
 
+Vorteile des Bike-Counters: 
++ Verwendung von handelsüblichen Sensoren (Drucksensor, Lichtschranke ...)
++ Richtungserkennung der Fahrräder
++ Zählerstände auf einem Dashboard visualisiert
++ Auswertung der Bewegungen der letzten 24h
++ Nutzung der kostenlosen SQL-Datenbank des Providers (Strato)
+
 ## Hardware
 + 1 x ESP32
 + 2 x Lichtschranken PEM2D
